@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'output';
+
+  // onomatopiaList 
+  onomatopiaList: string[] = [];
+
+  // onReceiveOnomatopia 
+  onReceiveOnomatopia(onomatopia: string): void {
+    this.onomatopiaList.push(onomatopia);
+  }
+
 }
